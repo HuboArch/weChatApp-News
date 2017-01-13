@@ -1,0 +1,32 @@
+<view>
+    <swiper
+            indicator-dots="true" autoplay="true" current="0" interval="2000" circular="true">
+        <swiper-item>
+            <image src="/images/1.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/3.jpg"></image>
+        </swiper-item>
+    </swiper>
+    <!--文章列表-->
+    <block wx:for="{{post_key}}" wx:for-item="item">
+        <view class="post-container">
+            <view class="post-author-date">
+                <image class="post-author" src="{{item.avatar}}"></image>
+                <text class="post-date">{{item.date}}</text>
+            </view>
+            <text class="post-title">{{item.title}}</text>
+            <image class="post-image" src="{{item.imgSrc}}"></image>
+            <text class="post-content">{{item.content}}</text>
+            <view class="post-like">
+                <image class="post-like-icon" src="../../images/icon/1.png"></image>
+                <text class="post-like-num">{{item.reading}}</text>
+                <image class="post-like-icon" src="../../images/icon/2.png"></image>
+                <text class="post-like-num">{{item.collection}}</text>
+            </view>
+        </view>
+    </block>
+</view>
