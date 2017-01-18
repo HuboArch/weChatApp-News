@@ -15,6 +15,6 @@
     <!--文章列表-->
     <block wx:for="{{post_key}}" wx:for-item="item">
         <!--template-->
-        <template is="postItem" data="{{item}}"/>
+        <template is="postItem" data="{{...item}}"/>
     </block>
 </view>
