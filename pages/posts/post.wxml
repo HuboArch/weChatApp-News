@@ -15,7 +15,7 @@
     <!--文章列表-->
     <block wx:for="{{post_key}}" wx:for-item="item">
         <!--template-->
-        <view catchtap="fun">
+        <view catchtap="postDetail" data-post-id="{{item.postId}}">
             <template is="postItem" data="{{...item}}"/>
         </view>
     </block>

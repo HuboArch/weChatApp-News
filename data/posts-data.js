@@ -10,7 +10,8 @@ var local_database = [
         avatar: "/images/avatar/1.png",
         content: "微信小程序正式上线 -  微信小程序今天凌晨正式上线。可通过扫二维码、搜索等方式体验小程序，只要将微信更新至最新版本，便可在发现页面看到小程序入口。此前有媒体分析称，小程序的入口更多在线下，即用户通过扫描二维码启动。",
         reading: "99+",
-        collection: "38"
+        collection: "38",
+        postId: 0
     },
     {
         date: "Fab 11 2016",
@@ -19,7 +20,8 @@ var local_database = [
         avatar: "/images/avatar/2.png",
         content: "微信小程序正式上线 -  微信小程序今天凌晨正式上线。可通过扫二维码、搜索等方式体验小程序，只要将微信更新至最新版本，便可在发现页面看到小程序入口。此前有媒体分析称，小程序的入口更多在线下，即用户通过扫描二维码启动。",
         reading: "99+",
-        collection: "66"
+        collection: "66",
+        postId: 1
     },
     {
         date: "Jan 15 2017",
@@ -28,7 +30,8 @@ var local_database = [
         avatar: "/images/avatar/3.png",
         content: "微信小程序正式上线 -  微信小程序今天凌晨正式上线。可通过扫二维码、搜索等方式体验小程序，只要将微信更新至最新版本，便可在发现页面看到小程序入口。此前有媒体分析称，小程序的入口更多在线下，即用户通过扫描二维码启动。",
         reading: "99+",
-        collection: "38"
+        collection: "38",
+        postId: 2
     },
     {
         date: "Sep 5 2016",
@@ -37,7 +40,8 @@ var local_database = [
         avatar: "/images/avatar/4.png",
         content: "微信小程序正式上线 -  微信小程序今天凌晨正式上线。可通过扫二维码、搜索等方式体验小程序，只要将微信更新至最新版本，便可在发现页面看到小程序入口。此前有媒体分析称，小程序的入口更多在线下，即用户通过扫描二维码启动。",
         reading: "99+",
-        collection: "38"
+        collection: "38",
+        postId: 3
     },
     {
         date: "Sep 5 2016",
@@ -46,7 +50,8 @@ var local_database = [
         avatar: "/images/avatar/5.png",
         content: "微信小程序正式上线 -  微信小程序今天凌晨正式上线。可通过扫二维码、搜索等方式体验小程序，只要将微信更新至最新版本，便可在发现页面看到小程序入口。此前有媒体分析称，小程序的入口更多在线下，即用户通过扫描二维码启动。",
         reading: "99+",
-        collection: "38"
+        collection: "38",
+        postId: 4
     }
 ];
 
