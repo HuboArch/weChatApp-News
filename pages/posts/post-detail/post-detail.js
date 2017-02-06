@@ -33,12 +33,22 @@ Page({
         var postCollected = postsCollected[this.data.currentPostId];
 
         postCollected = !postCollected;
-
-        //小程序是单向数据绑定
         postsCollected[this.data.currentPostId] = postCollected;
+
+        this.showToast(postsCollected, postCollected);
+    },
+
+    showToast: function (postsCollected, postCollected) {
+        // 更新文章是否收藏的缓存值
         wx.setStorageSync('posts-collected', postsCollected);
+
+        // 更新收藏状态图标
         this.setData({
             collected: postCollected
+        });
+
+        wx.showToast({
+            title: postCollected ? "收藏成功" : "收藏失败"
         });
     }
 });

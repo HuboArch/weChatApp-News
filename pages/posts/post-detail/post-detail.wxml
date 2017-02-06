@@ -9,7 +9,7 @@
     </view>
     <text class="title">{{post.title}}</text>
     <view class="tool">
-        <view class="circle-img">
+        <view class="circle-img" catchtap="onCollectionTap">
             <image wx:if="{{collected}}" src="/images/icon/share-icon.png"></image>
             <image wx:else src="/images/icon/share-icon-gray.png"></image>
             <image class="collection" src="/images/icon/collection.png"></image>
