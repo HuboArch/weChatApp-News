@@ -1,4 +1,5 @@
 var postData = require("../../../data/posts-data");
+var app = getApp();
 
 Page({
     data: {
@@ -93,10 +94,23 @@ Page({
             });
 
             // this.data.isPlayingMusic = true;
-            // setData()可以更新到 UI 视图层
+            // setData()可以更新 UI 视图层
             this.setData({
                 isPlayingMusic: true
             });
         }
+
+        var self = this;
+        wx.onBackgroundAudioPlay(function () {
+            self.setData({
+                isPlayingMusic: true
+            });
+        });
+
+        wx.onBackgroundAudioPause(function () {
+            self.setData({
+                isPlayingMusic: false
+            });
+        });
     }
 });
