@@ -4,7 +4,7 @@ Page({
             url: '../posts/post'
         });*/
 
-        wx.redirectTo({
+        wx.navigateTo({
             url: '../posts/post'
         });
     }
